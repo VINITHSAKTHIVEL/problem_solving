@@ -6,7 +6,6 @@ int main()
     int i,j;
     char c[10];
     scanf("%s",c);
-    //printf("%s\n\n",c);
     int len=strlen(c);
     int mid=len/2;
     char a[20];
@@ -18,7 +17,6 @@ int main()
     {
        a[i+j]=c[j]; 
     }
-  //  printf("%s\n\n\n",a);
     
     for(i=0;i<len;i++)
     {
