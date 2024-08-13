@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+#include <stdbool.h>
+int main() {                        //  a=97  b=98  c=99
+ int d='Z';  //lowercase ascii value of d =100; e=101......z=122
+   printf("%d\n",d);//  uppercase ascii value of A=65  Z=90;
+    bool isTrue=true;
+    bool isFalse=false;
+    for(int i=isFalse;i<d;i++)
+    {
+        printf("%d\n",i+isTrue);
+    }
+    return 0;
+}
