@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main() {
+  char c[20];
+  scanf(" %19[^\n]c",c);
+  int i=0,j,len=0;
+  while(c[i]!='\0')
+  {
+    len++;  
+    i++;
+  }
+  printf("%d\n",len);
+  for(i=0;i<len;i++)
+  {
+      for(j=0;j<=i;j++)
+      {
+          printf("%c",c[j]);
+      }
+      printf("\n");
+  }
+  int mid=len;
+   for(i=0;i<mid-1;i++)
+          {
+              for(j=0;j<len-1;j++)
+              {   
+                printf("%c",c[j]);
+                
+              }
+              len--;
+                  printf("\n");
+          }
+
+    return 0;
+}
